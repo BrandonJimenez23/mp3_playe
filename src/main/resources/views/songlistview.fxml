@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SongListViewController">
+   <children>
+      <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="421.0" spacing="20.0">
+                     <children>
+                        <Label fx:id="playlistNameLabel" prefHeight="35.0" text="Titulo de la playlist">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Description" />
+                        <Label fx:id="createDateLabel" text="Fecha de creacion" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" minHeight="50.0" spacing="20.0">
+               <children>
+                  <Button fx:id="playPlaylistButton" mnemonicParsing="false" text="Reproducir" />
+                  <Button fx:id="editPlaylistButton" mnemonicParsing="false" text="Editar" />
+                  <Button fx:id="deletePlaylistButton" mnemonicParsing="false" text="Eliminar" />
+               </children>
+            </HBox>
+            <TableView fx:id="songsTableView">
+              <columns>
+                <TableColumn fx:id="idColumn" maxWidth="100.0" minWidth="25.0" prefWidth="50.0" text="#" />
+                <TableColumn fx:id="titleColumn" maxWidth="250.0" minWidth="25.0" prefWidth="100.0" text="Titulo" />
+                  <TableColumn fx:id="albumColumn" maxWidth="300.0" minWidth="100.0" prefWidth="250.0" text="Album" />
+                  <TableColumn fx:id="addToPlaylistColumn" prefWidth="75.0" />
+                  <TableColumn fx:id="durationColumn" maxWidth="200.0" minWidth="50.0" prefWidth="100.0" text="Duration" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

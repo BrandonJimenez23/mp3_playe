@@ -1,0 +1,2 @@
+# Ignorar archivo de configuración con datos sensibles
+src/main/resources/application.properties

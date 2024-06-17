@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlaylistLibraryViewController">
+   <VBox alignment="TOP_CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <HBox alignment="CENTER">
+            <children>
+               <Label fx:id="viewTitle" prefWidth="100.0" text="Your Library" />
+               <ButtonBar prefHeight="40.0" prefWidth="100.0">
+                 <buttons>
+                     <Button fx:id="addPlaylistButton" alignment="CENTER" mnemonicParsing="false" text="Add" />
+                 </buttons>
+               </ButtonBar>
+            </children></HBox>
+          <ListView fx:id="playlistListView" />
+      </children>
+   </VBox>
+</AnchorPane>
