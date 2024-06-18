@@ -16,7 +16,7 @@
          <children>
             <HBox alignment="CENTER_LEFT">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="playlistImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                   <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="421.0" spacing="20.0">
                      <children>
                         <Label fx:id="playlistNameLabel" prefHeight="35.0" text="Titulo de la playlist">
